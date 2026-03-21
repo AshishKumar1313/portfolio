@@ -37,9 +37,9 @@ export const LINKS = {
 };
 
 export const HERO = {
-  badge: "Available for opportunities",
+  badge: "Welcome to my portfolio",
   title: ["Ashish", "Kumar"],
-  role: "Software Engineer / Full-Stack Developer",
+  role: "Full-Stack Developer",
   description:
     "I build dynamic, scalable, and intelligent applications. Passionate about full-stack development, AI-powered tools, and solving real-world problems through code.",
   primaryCta: { label: "View My Work", href: "#projects" },
@@ -93,7 +93,7 @@ export const SKILL_GROUPS = [
     items: [
       "Problem-Solving",
       "Team Player",
-      "Project Management",
+      "Time management",
       "Adaptability",
     ],
   },
@@ -163,6 +163,15 @@ export const TIMELINE_ITEMS = [
     ],
   },
   {
+    date: "160 Days Challenge",
+    title: "GFG 160 Days Coding Challenge",
+    org: "GeeksforGeeks",
+    details: [
+      "Completed the full 160-day coding challenge as a top performer with strong consistency and problem-solving discipline.",
+      "Solved a broad range of DSA problems, improving speed, accuracy, and interview-focused coding confidence.",
+    ],
+  },
+  {
     date: "Ongoing",
     title: "DSA Problem Solver",
     org: "LeetCode",
@@ -176,16 +185,19 @@ export const CERTIFICATIONS = [
   {
     title: "Introduction to Hardware and Operating Systems",
     org: "IBM / Coursera / Dec 2024",
+    image: "https://drive.google.com/thumbnail?id=1XWgbLYZLNmK1LoJiXKdbYa07pCPYfYYL&sz=w1200",
     link: "https://drive.google.com/file/d/1XWgbLYZLNmK1LoJiXKdbYa07pCPYfYYL/view?usp=drive_link",
   },
   {
     title: "The Bits and Bytes of Computer Networking",
     org: "Google / Coursera / Dec 2024",
+    image: "https://drive.google.com/thumbnail?id=1UcJDMX3F7I_iWJlKdKO7uA5xYKH6Krtf&sz=w1200",
     link: "https://drive.google.com/file/d/1UcJDMX3F7I_iWJlKdKO7uA5xYKH6Krtf/view?usp=drive_link",
   },
   {
     title: "C Programming Language - Summer Training",
     org: "CSE Pathshala / Jun-Aug 2025",
+    image: "https://drive.google.com/thumbnail?id=1wOFin0UmZpBOggpJ6EgN16dU6woWA6Cf&sz=w1200",
     link: "https://drive.google.com/file/d/1wOFin0UmZpBOggpJ6EgN16dU6woWA6Cf/view?usp=drive_link",
   },
 ] as const;
@@ -197,7 +209,7 @@ export const EDUCATION = [
     location: "Phagwara, Punjab",
     degree: "Computer Science and Engineering",
     year: "Since August 2023",
-    score: "CGPA: 7.2",
+    score: "CGPA: 6.77",
   },
   {
     label: "Intermediate / Science PCM",
@@ -206,6 +218,14 @@ export const EDUCATION = [
     degree: "Science - Physics, Chemistry, Math",
     year: "Apr 2022 - Mar 2023",
     score: "74%",
+  },
+  {
+    label: "Matriculation / Science",
+    institution: "Maharishi Dayanand Public School",
+    location: "Kaithal, Haryana",
+    degree: "Science",
+    year: "Apr 2020 - Mar 2021",
+    score: "82%",
   },
 ] as const;
 

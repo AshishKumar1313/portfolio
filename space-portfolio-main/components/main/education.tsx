@@ -14,9 +14,9 @@ export const Education = () => {
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          {EDUCATION.map((item) => (
+          {EDUCATION.map((item, index) => (
             <article
-              key={item.institution}
+              key={`${item.institution}-${item.year}-${item.label}-${index}`}
               className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md"
             >
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-sky-300">
