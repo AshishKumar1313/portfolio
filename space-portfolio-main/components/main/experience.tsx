@@ -4,8 +4,8 @@ import { CERTIFICATIONS, TIMELINE_ITEMS } from "@/constants";
 
 export const Experience = () => {
   return (
-    <section id="experience" className="px-6 py-24 sm:px-10 lg:px-20">
-      <div className="mx-auto max-w-7xl">
+    <section className="px-6 py-24 sm:px-10 lg:px-20">
+      <div id="training" className="mx-auto max-w-7xl">
         <div className="mb-12 max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
             Background
@@ -16,38 +16,41 @@ export const Experience = () => {
         </div>
 
         <div className="space-y-14">
-          <div>
+          <div id="achievements">
             <h3 className="text-xl font-bold text-white sm:text-2xl">
               Training & Achievements
             </h3>
             <div className="mt-6 grid gap-5 md:grid-cols-2">
-            {TIMELINE_ITEMS.map((item, index) => (
-              <article
-                key={`${item.title}-${item.date}-${index}`}
-                className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md"
-              >
-                <p className="text-xs uppercase tracking-[0.22em] text-cyan-200/70">
-                  {String(index + 1).padStart(2, "0")}
-                </p>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-300">
-                  {item.date}
-                </p>
-                <h3 className="mt-3 text-2xl font-bold text-white">{item.title}</h3>
-                <p className="mt-1 text-sm font-medium text-slate-400">{item.org}</p>
-                <ul className="mt-5 space-y-3 text-sm leading-7 text-slate-300">
-                  {item.details.map((detail) => (
-                    <li key={detail} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-300" />
-                      <span>{detail}</span>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
+              {TIMELINE_ITEMS.map((item, index) => (
+                <article
+                  key={`${item.title}-${item.date}-${index}`}
+                  className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md"
+                >
+                  <p className="text-xs uppercase tracking-[0.22em] text-cyan-200/70">
+                    {String(index + 1).padStart(2, "0")}
+                  </p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-300">
+                    {item.date}
+                  </p>
+                  <h3 className="mt-3 text-2xl font-bold text-white">{item.title}</h3>
+                  <p className="mt-1 text-sm font-medium text-slate-400">{item.org}</p>
+                  <ul className="mt-5 space-y-3 text-sm leading-7 text-slate-300">
+                    {item.details.map((detail) => (
+                      <li key={detail} className="flex gap-3">
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-300" />
+                        <span>{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
             </div>
           </div>
 
-          <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/55 p-6 shadow-[0_20px_60px_rgba(2,6,23,0.28)] backdrop-blur-md">
+          <div
+            id="certifications"
+            className="rounded-[1.75rem] border border-white/10 bg-slate-950/55 p-6 shadow-[0_20px_60px_rgba(2,6,23,0.28)] backdrop-blur-md"
+          >
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300">
               Certifications
             </p>

@@ -9,7 +9,10 @@ export const NAV_LINKS = [
   { title: "About", link: "#about" },
   { title: "Skills", link: "#skills" },
   { title: "Projects", link: "#projects" },
-  { title: "Journey", link: "#experience" },
+  { title: "Training", link: "#training" },
+  { title: "Achievement", link: "#achievements" },
+  { title: "Certification", link: "#certifications" },
+  { title: "Education", link: "#education" },
   { title: "Contact", link: "#contact" },
 ] as const;
 
